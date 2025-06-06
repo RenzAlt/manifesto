@@ -10,6 +10,10 @@
 	   revision="Udon_v2"
 	   fetch="https://gitlab.com/Miku-UI" />
 
+  <remote name="lineage-caf"
+            fetch="https://github.com/LineageOS/"
+            revision="refs/heads/lineage-20.0" />
+
   <!-- Art -->
   <project path="art" name="platform_art" remote="miku" />
 
@@ -38,12 +42,13 @@
   <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="platform_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="miku" revision="Udon" />
   <project path="vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um" name="platform_vendor_qcom_opensource_data-ipa-cfg-mgr-legacy-um" remote="miku" revision="Udon" />
   <project path="vendor/qcom/opensource/dataservices" name="platform_vendor_qcom_opensource_dataservices" remote="miku" revision="Udon" />
-  <project path="vendor/qcom/opensource/commonsys/display" name="platform_vendor_qcom_opensource_display-commonsys" remote="miku" revision="Udon" />
-  <project path="vendor/qcom/opensource/commonsys-intf/display" name="platform_vendor_qcom_opensource_display-commonsys-intf" remote="miku" revision="Udon" />
   <project path="vendor/qcom/opensource/interfaces" name="platform_vendor_qcom_opensource_interfaces" remote="miku" revision="Udon" />
   <project path="vendor/qcom/opensource/power" name="platform_vendor_qcom_opensource_power" remote="miku" revision="Udon" />
   <project path="vendor/qcom/opensource/vibrator" name="platform_vendor_qcom_opensource_vibrator" remote="miku" revision="Udon" />
   <project path="vendor/qcom/opensource/usb" name="platform_vendor_qcom_opensource_usb" remote="miku" revision="Udon" />
+  <project path="vendor/qcom/opensource/commonsys-intf/display" remote="lineage-caf" name="android_vendor_qcom_opensource_display-commonsys-intf" groups="qcom,qssi" revision="lineage-19.1" />
+  <project path="vendor/qcom/opensource/commonsys/display" remote="lineage-caf" name="android_vendor_qcom_opensource_display-commonsys" groups="qcom,qssi" revision="lineage-19.1" />
+  <project path="vendor/qcom/opensource/display" remote="lineage-caf" name="android_vendor_qcom_opensource_display" groups="qcom" revision="lineage-19.1" />
 
   <!-- Device -->
   <project path="device/qcom/perf" name="platform_device_qcom_perf" remote="miku" revision="Udon" />
